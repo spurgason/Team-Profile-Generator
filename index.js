@@ -38,10 +38,11 @@ const addManager = () => {
         ]).then(answers => {
             const manager = new Manager(answers.name, answers.id, answers.email, answers.office);
             employees.push(manager);
+            addEmployee()
         });
 }
 
-const addEmployee = () => {
+const addEmployee = employeeData => {
     console.log(`
     ==================
      Add New Employee
@@ -59,11 +60,12 @@ const addEmployee = () => {
             }
         ]).then(({ role }) => {
             if (role === 'Engineer') {
-                engineer();
+                addEngineer();
             } else if (role === 'Intern') {
-                intern();
+                addIntern();
             } else {
                 console.log(employees);
+                writeFile();
             }
         });
 }
@@ -100,6 +102,7 @@ const addEngineer = () => {
         ]).then(answers => {
             const engineer = new Engineer(answers.name, answers.id, answers.email, answers.github);
             employees.push(engineer);
+            addEmployee();
         });
 }
 
@@ -135,5 +138,19 @@ const addIntern = () => {
         ]).then(answers => {
             const intern = new Intern(answers.name, answers.id, answers.email, answers.school);
             employees.push(intern);
+            addEmployee();
         });
 }
+
+const writeFile = employees => {
+    fs.writeFile('./dist/index.html', generatePage(employees), err =>{
+        if (err) {
+            console.log(err);
+            return;
+        } else {
+            console.log("Team page has been generated!");
+        }
+    });
+}
+
+addManager()

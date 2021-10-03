@@ -1,5 +1,4 @@
-const generateEmployees = (employees) => {
-    console.log(employees);
+
     const generateManager = manager => {
 
         return `
@@ -50,10 +49,10 @@ const generateEmployees = (employees) => {
     </div>
     `;
     };
-}
 
-module.exports = templateData => {
-    const { manager, engineer, intern } = templateData;
+
+module.exports = manager => {
+    
 
     return `
     <!DOCTYPE html>
@@ -77,7 +76,7 @@ module.exports = templateData => {
     </nav>
 
     <div class="row">
-       ${generateEmployees(employees)}
+       ${generateManager(manager)}
     </div>
 </div>
 
