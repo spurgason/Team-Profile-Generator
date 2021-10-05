@@ -64,7 +64,6 @@ const addEmployee = employeeData => {
             } else if (role === 'Intern') {
                 addIntern();
             } else {
-                console.log(employees);
                 writeFile();
             }
         });
@@ -142,15 +141,29 @@ const addIntern = () => {
         });
 }
 
-const writeFile = employees => {
+function writeFile (){
     fs.writeFile('./dist/index.html', generatePage(employees), err =>{
         if (err) {
             console.log(err);
             return;
         } else {
             console.log("Team page has been generated!");
+            copyFile();
         }
     });
+ 
 }
+
+function copyFile (){
+    fs.copyFile('./src/style.css', './dist/style.css/', err =>{
+        if (err) {
+            console.log(err);
+            return;
+        } else {
+            console.log("Stylesheet created!");
+        }
+    })
+}
+
 
 addManager()
