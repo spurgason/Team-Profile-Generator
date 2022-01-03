@@ -46,7 +46,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![Team Profile Generator Screenshot](./src/images/team-profile-gen-example.png)
+![Team Profile Generator Example][team-profile-generator-example]
 
 This project is a simple, yet intuitive way to track employees within a business. It allows the user to choose from three separate job categories (manager, engineer, and intern) and assign them their respective values.  
 
@@ -109,3 +109,6 @@ Email: [shanepurgason.98@gmail.com](mailto:shanepurgason.98@gmail.com)
 Project Link: [https://github.com/spurgason/work-day-scheduler](https://github.com/spurgason/work-day-scheduler)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- MARKDOWN LINKS & IMAGES -->
+[team-profile-generator-example]: src/images/team-profile-gen-example.png
