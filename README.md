@@ -1,22 +1,111 @@
-# Team Profile Generator
+<div id="top"></div>
 
-## Description
-This project is a command-line application that uses Node.js to fill out and generate an employee information page. This application will allow the user to add a manager, engineers, and employees to their work roster. Each employee will be given a role and Id, with a form of contact which will be there email. Each role also has their own specific item relating to their field. 
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
 
-## Installation
-Users must have Node.js to run and need to install the inquirer npm module to run this application.
+<h3 align="center">Team Profile Generator</h3>
 
+  <p align="center"> 
+    <a href="https://github.com/spurgason/team-profile-generator"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/spurgason/team-profile-generator">View Demo</a>
+    ·
+    <a href="https://github.com/spurgason/team-profile-generator/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/spurgason/team-profile-generator/issues">Request Feature</a>
+  </p>
+</div>
+
+
+
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
+
+
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
+![Team Profile Generator Screenshot](src/images/team-profile-gen-example.png)
+
+This project is a simple, yet intuitive way to track employees within a business. It allows the user to choose from three separate job categories (manager, engineer, and intern) and assign them their respective values.  
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+### Built With
+
+* [Jest](https://jestjs.io/)
+* [Inquirer](https://www.npmjs.com/package/inquirer)
+* [Bootstrap](https://getbootstrap.com)
+
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+To get started, follow the simple installation instructions below. Once the project is copied onto your local machine and all dependencies have been downloaded you can run `node index` in the command-line to start the application. 
+
+### Installation
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/spurgason/team-profile-generator.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+<!-- USAGE EXAMPLES -->
 ## Usage
-After installation users can run the application in the command line by typing “node index” to initialize the application. This will then trigger a series of questions regarding the employees and their function at the workplace. Once the user is finished a rendered HTML file will be loaded in the dist folder that will be filled out using the users input. 
 
-## Credits
-Shane Purgason
+1. Initialize the application in the command-line 
+  ```sh
+   node index
+   ```
+2. Add manager and its respective information
 
-## Test 
-This application also uses the Jest npm module to test the functionality of each class within this application.
+3. Select role you would like to add (i.e., engineer or intern) and fill out its respective information. When you are finished you can select finish from the options in the command line.
 
-[Walkthrough Video](https://watch.screencastify.com/v/igjgJ6Ns6HV1VUmfblRz)
+4. Once finished has been selected the file will render into the `dist` folder as an [`index.html`](/dist/index.html) file 
 
- ## Questions
-  [Github](https://github.com/spurgason) <br>
-  [Email](mailto:shanepurgason.98@gmail.com)
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- CONTACT -->
+## Contact
+Github Profile: [https://github.com/spurgason](https://github.com/spurgason) 
+
+Email: [shanepurgason.98@gmail.com](mailto:shanepurgason.98@gmail.com)
+
+Project Link: [https://github.com/spurgason/work-day-scheduler](https://github.com/spurgason/work-day-scheduler)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
